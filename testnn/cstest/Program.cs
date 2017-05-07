@@ -31,15 +31,15 @@ namespace cstest
             }
             float weightedSum()
             {
-                float one = Synapses[1].Weight * Inputs[1];
+                float one = Synapses[0].Weight * Inputs[0];
                 double done = (double)one;
-                Synapses[1].Percentage = (float) sigmoid(done);
-                float two = Synapses[2].Weight * Inputs[2];
+                Synapses[0].Percentage = (float) sigmoid(done);
+                float two = Synapses[1].Weight * Inputs[1];
                 double dtwo = (double)two;
-                Synapses[2].Percentage = (float) sigmoid(dtwo);
-                float three = Synapses[3].Weight * Inputs[3];
+                Synapses[1].Percentage = (float) sigmoid(dtwo);
+                float three = Synapses[2].Weight * Inputs[2];
                 double dthree = (double)three;
-                Synapses[3].Percentage = (float) sigmoid(dthree);
+                Synapses[2].Percentage = (float) sigmoid(dthree);
                 return one + two + three;
             }
             double sigmoid(double x)
@@ -53,7 +53,7 @@ namespace cstest
             float chVal;
             public void train()
             {
-                for(int i = 1; i > 3; i++)
+                for(int i = 0; i > 2; i++)
                 {
                     if(Outputs[i] == 1)
                     {
