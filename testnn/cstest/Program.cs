@@ -10,6 +10,10 @@ namespace cstest
     {
         static Synapse[] Synapses;
         static int[] Inputs;
+        class Predict
+        {
+
+        }
         class Init
         {
             public Init(int weight, string inputs)
@@ -35,7 +39,7 @@ namespace cstest
             {
                 Weight = weight;
             }
-            public void ChVal(float change, float percentage)
+            public Synapse(float change, float percentage)
             {
                 Weight += change;
                 Percentage = percentage;
