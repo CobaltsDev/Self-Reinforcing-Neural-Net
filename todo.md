@@ -1,19 +1,5 @@
-/* Todo for everyone
-
-
+## Todo
 
 Sim/
   -create controller to interface with NN [half done]
   
-
-
-
-
-
-
-
-
-
-
-
-*/
