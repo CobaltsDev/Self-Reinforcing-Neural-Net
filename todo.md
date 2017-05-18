@@ -1,5 +1,5 @@
 ## Todo
 
 Sim/  
-  -create controller to interface with NN [half done]
+  - create controller to interface with NN [half done]
   
